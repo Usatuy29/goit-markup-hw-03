@@ -39,13 +39,33 @@ color: var(--text);
     clip: rect(0 0 0 0);
     overflow: hidden;
   }
-ul{
+ul,
+ol{
 list-style: none;
+padding-left: 0;
+margin: 0;
+}
+img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+button{
+    display: block;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+}
+a{
+    text-decoration:none;
+    color: inherit;
 }
 h1,
 h2,
 h3,
 h4,
+h5,
+h6,
 p{
     margin-top: 0;
     margin-bottom: 0;
@@ -53,13 +73,16 @@ p{
 .conteiner{
     width: 1158px;
     margin: 0 auto;
-
+    padding: 0 15px;
+}
+section{
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 /* head*/
 .page-header{
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+    align-items: center;
 
 }
 .logo{
@@ -69,7 +92,6 @@ p{
     font-size: 18px;    
     Line-height: 1.14;
     font-weight: 800;
-    cursor: pointer;
     padding-top: 24px;
     padding-bottom: 24px;
     
@@ -84,17 +106,12 @@ p{
 
 /*site nav*/
 .site-nav{
+    margin-left: 77px;
     margin-top: 0;
     margin-bottom: 0;
-    margin-left: 77px;
     padding-left: 0;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-top: 24px;
-    padding-bottom: 24px;
-    width: 261px;
-    
+    gap: 40px   ;
 }
 .site-nav .link{
     text-decoration: none;
@@ -103,6 +120,8 @@ p{
     line-height: 1.28;
     font-weight: 700;
     letter-spacing: 0.02em;
+    padding: 26px 0;
+    display: block;
 }
 .site-nav .link:hover,
 .site-nav .link:focus{
@@ -115,15 +134,9 @@ p{
     color: #4D5AE5;}
 /*contacts*/
 .contacts{
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-left: 331px; 
-    padding-top: 24px;
-    padding-bottom: 24px;
-    width: 344px;
+    margin-left: auto; 
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    gap: 40px;
 }
 .contacts .mail{
     text-decoration: none;
@@ -144,6 +157,7 @@ p{
     background-color:var(--dark);
     text-align: center;
     padding-top: 192px;
+    padding-bottom: 192px;
     
 }
 .hero-title{
@@ -154,8 +168,7 @@ p{
     letter-spacing: 0.02em;
     margin-right: auto;
     margin-left: auto;
-    
-    max-width: 492px;
+    width: 496px;
 }
 .button{
     color:#ffffff;
@@ -165,12 +178,11 @@ p{
     font-weight: 700;
     letter-spacing: 0.04em;
     font-family: 'Roboto';
-    cursor: pointer;
     padding: 16px 32px;
-    border: 1px solid transparent;
-    border-radius: 5px;
     margin-top: 48px;
-    margin-bottom: 192px;
+    margin-bottom: 72px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .button:hover
 .button:focus{
@@ -180,7 +192,6 @@ p{
 /*section */
 .content-list{
     display: flex;
-    margin-top: 120px;
     margin-bottom: 0;
     flex-direction: row;
     justify-content: space-between;
@@ -209,12 +220,10 @@ p{
     Font-size: 36px;
     Line-height: 0.95;
     letter-spacing: 0.02em;
-    text-align: center;
-    padding-top: 120px;  
+    text-align: center; 
 }
 .section-item{
     margin-top: 72px;
-    margin-bottom: 120px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -237,7 +246,6 @@ p{
 }
 .team{
     background-color: #F4F4FD;
-    padding-bottom: 120px;
     
 }
 .name{
@@ -270,7 +278,6 @@ footer{
     font-size: 18px;    
     Line-height: 1.14;
     font-weight: 800;
-    cursor: pointer;
     
 }
 .logo-end{
@@ -296,11 +303,8 @@ footer{
     flex-direction: row;
     justify-content: space-between;
     width: 586px;
-    margin-top: 96px;
-    margin-bottom: 0;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 0;
 }
 .button-icon{
     font-family:'Roboto';
@@ -324,8 +328,6 @@ footer{
 /*services section*/
 .servises-list{
 margin-top: 72px;
-margin-bottom: 120px;
-padding-left: 0;
 display: flex;
 flex-wrap: wrap;
 justify-content: space-between;
